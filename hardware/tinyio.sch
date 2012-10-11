@@ -1,0 +1,520 @@
+EESchema Schematic File Version 2  date Thu 11 Oct 2012 12:08:07 SAST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:marula-atmel
+LIBS:marula-linear
+LIBS:tinyio-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "TinyIO"
+Date "11 oct 2012"
+Rev "0.1"
+Comp "Marulaberry"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4300 3550 4300 3800
+Connection ~ 3600 4850
+Wire Wire Line
+	3600 5200 3600 4850
+Connection ~ 6450 4550
+Wire Wire Line
+	6450 4400 6450 4550
+Wire Wire Line
+	5900 4550 6850 4550
+Wire Wire Line
+	5900 4750 7900 4750
+Connection ~ 5550 2300
+Wire Wire Line
+	5550 2300 5550 2400
+Wire Wire Line
+	3500 2300 3500 3000
+Wire Wire Line
+	5200 2300 5900 2300
+Connection ~ 9100 3800
+Wire Wire Line
+	9100 3700 9100 3800
+Wire Wire Line
+	9150 4450 9150 4200
+Wire Wire Line
+	7400 4650 5900 4650
+Wire Wire Line
+	6450 4850 6450 5300
+Connection ~ 5300 2300
+Wire Wire Line
+	5300 2100 5300 2300
+Wire Wire Line
+	4450 5050 4450 4850
+Wire Wire Line
+	8100 2200 8100 2300
+Wire Wire Line
+	3400 5700 3400 5850
+Connection ~ 3400 4650
+Wire Wire Line
+	3400 4300 3400 4650
+Wire Wire Line
+	4300 4300 4300 4550
+Wire Wire Line
+	4300 4550 4550 4550
+Wire Wire Line
+	2900 4650 4550 4650
+Wire Wire Line
+	6450 3850 6450 4000
+Wire Wire Line
+	4350 3150 3400 3150
+Wire Wire Line
+	3400 3150 3400 2350
+Wire Wire Line
+	3400 2350 3000 2350
+Wire Wire Line
+	4350 1450 3400 1450
+Wire Wire Line
+	3400 1450 3400 2150
+Wire Wire Line
+	3400 2150 3000 2150
+Wire Wire Line
+	8100 2300 6950 2300
+Wire Wire Line
+	4450 4850 4550 4850
+Wire Wire Line
+	7900 4750 7900 5350
+Wire Wire Line
+	7900 4650 8850 4650
+Wire Wire Line
+	5700 2300 5700 2150
+Connection ~ 5700 2300
+Wire Wire Line
+	9150 4850 9150 5100
+Wire Wire Line
+	3400 5200 3400 4750
+Connection ~ 3400 4750
+Wire Wire Line
+	3400 3550 3400 3800
+Wire Wire Line
+	2900 4750 4550 4750
+Wire Wire Line
+	2900 4550 3250 4550
+Wire Wire Line
+	3250 4550 3250 4500
+Wire Wire Line
+	6400 2800 6400 2900
+Wire Wire Line
+	8900 4200 9250 4200
+Wire Wire Line
+	9250 4200 9250 4100
+Connection ~ 9150 4200
+Wire Wire Line
+	8900 3800 9250 3800
+Wire Wire Line
+	9250 3800 9250 3900
+Wire Wire Line
+	3650 2800 3500 2800
+Connection ~ 3500 2800
+Wire Wire Line
+	5550 2800 5550 2900
+Wire Wire Line
+	6450 4850 5900 4850
+Wire Wire Line
+	6850 4550 6850 3900
+Wire Wire Line
+	6450 5300 3900 5300
+Wire Wire Line
+	3900 5300 3900 4850
+Wire Wire Line
+	3900 4850 2900 4850
+Wire Wire Line
+	3600 5700 3600 5850
+$Comp
+L +5V #PWR01
+U 1 1 50504F9B
+P 4300 3550
+F 0 "#PWR01" H 4300 3640 20  0001 C CNN
+F 1 "+5V" H 4300 3640 30  0000 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 50504F7C
+P 4300 4050
+F 0 "R4" V 4380 4050 50  0000 C CNN
+F 1 "4.7K" V 4300 4050 50  0000 C CNN
+	1    4300 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 50504F17
+P 3600 5850
+F 0 "#PWR02" H 3600 5850 30  0001 C CNN
+F 1 "GND" H 3600 5780 30  0001 C CNN
+	1    3600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 50504F08
+P 3600 5450
+F 0 "R3" V 3680 5450 50  0000 C CNN
+F 1 "100k" V 3600 5450 50  0000 C CNN
+	1    3600 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 503CEA23
+P 6450 4200
+F 0 "C4" H 6500 4300 50  0000 L CNN
+F 1 "100n" H 6500 4100 50  0000 L CNN
+	1    6450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 503E3B64
+P 3650 2800
+F 0 "#FLG03" H 3650 3070 30  0001 C CNN
+F 1 "PWR_FLAG" H 3650 3030 30  0000 C CNN
+	1    3650 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 503E3B54
+P 3500 3000
+F 0 "#PWR04" H 3500 3000 30  0001 C CNN
+F 1 "GND" H 3500 2930 30  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 6150 1850 0    40   ~ 0
+L78M05ACDT Max Vin 35V, Vout 5V, \nMax Current Out 0.5A
+Text Notes 2500 2600 0    40   ~ 0
+MB2S 0.5A Max RMS 140V
+$Comp
+L L78M05ACDT-TR U2
+U 1 1 503DAD80
+P 6200 2300
+F 0 "U2" H 6550 2000 60  0000 C CNN
+F 1 "L78M05ACDT-TR" H 6500 2550 60  0000 C CNN
+F 4 "686-9319" H 6200 2300 60  0001 C CNN "RS"
+	1    6200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 503DAB19
+P 5550 2900
+F 0 "#PWR05" H 5550 2900 30  0001 C CNN
+F 1 "GND" H 5550 2830 30  0001 C CNN
+	1    5550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 503DAAF0
+P 5550 2600
+F 0 "C3" H 5600 2700 50  0000 L CNN
+F 1 "330u" H 5600 2500 50  0000 L CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D4
+U 1 1 503D162B
+P 8900 4000
+F 0 "D4" H 8900 4100 40  0000 C CNN
+F 1 "S1G" H 8900 3900 40  0000 C CNN
+	1    8900 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 503D15C5
+P 3250 4500
+F 0 "#PWR06" H 3250 4590 20  0001 C CNN
+F 1 "+5V" H 3250 4590 30  0000 C CNN
+	1    3250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 503D0C4F
+P 5300 2100
+F 0 "#FLG07" H 5300 2370 30  0001 C CNN
+F 1 "PWR_FLAG" H 5300 2330 30  0000 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 9450 4300 0    60   ~ 0
+RELAY
+Text Notes 8350 5650 0    60   ~ 0
+STATUS LED
+Text Notes 5750 4200 0    60   ~ 0
+MCU
+Text Notes 2450 5200 0    60   ~ 0
+SENSOR
+$Comp
+L GND #PWR08
+U 1 1 503D0564
+P 3400 3550
+F 0 "#PWR08" H 3400 3550 30  0001 C CNN
+F 1 "GND" H 3400 3480 30  0001 C CNN
+	1    3400 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 503D0562
+P 3400 5850
+F 0 "#PWR09" H 3400 5850 30  0001 C CNN
+F 1 "GND" H 3400 5780 30  0001 C CNN
+	1    3400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 503D054F
+P 3400 5450
+F 0 "R2" V 3480 5450 50  0000 C CNN
+F 1 "100k" V 3400 5450 50  0000 C CNN
+	1    3400 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 503D054C
+P 3400 4050
+F 0 "R1" V 3480 4050 50  0000 C CNN
+F 1 "100k" V 3400 4050 50  0000 C CNN
+	1    3400 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 503D047D
+P 9150 5100
+F 0 "#PWR010" H 9150 5100 30  0001 C CNN
+F 1 "GND" H 9150 5030 30  0001 C CNN
+	1    9150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR15
+U 1 1 503D046C
+P 9100 3700
+F 0 "#PWR15" H 9100 3830 20  0001 C CNN
+F 1 "+6V" H 9100 3800 30  0000 C CNN
+	1    9100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 503D0449
+P 9600 4000
+F 0 "P3" V 9550 4000 40  0000 C CNN
+F 1 "RELAY" V 9650 4000 40  0000 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +6V #PWR7
+U 1 1 503CEC48
+P 5700 2150
+F 0 "#PWR7" H 5700 2280 20  0001 C CNN
+F 1 "+6V" H 5700 2250 30  0000 C CNN
+	1    5700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q1
+U 1 1 503CEBC0
+P 9050 4650
+F 0 "Q1" H 9050 4500 50  0000 R CNN
+F 1 "BC817" H 9050 4800 50  0000 R CNN
+F 4 "484-2252" H 9050 4650 60  0001 C CNN "RS"
+	1    9050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 503CEB7E
+P 7650 4650
+F 0 "R5" V 7730 4650 50  0000 C CNN
+F 1 "4.7K" V 7650 4650 50  0000 C CNN
+	1    7650 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 503CEAF9
+P 9200 5350
+F 0 "#PWR011" H 9200 5350 30  0001 C CNN
+F 1 "GND" H 9200 5280 30  0001 C CNN
+	1    9200 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 503CEA96
+P 8250 5350
+F 0 "R6" V 8330 5350 50  0000 C CNN
+F 1 "220R" V 8250 5350 50  0000 C CNN
+	1    8250 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 503CEA6F
+P 8850 5350
+F 0 "D2" H 8850 5450 50  0000 C CNN
+F 1 "RED LED" H 8850 5250 50  0000 C CNN
+	1    8850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 503CEA56
+P 4450 5050
+F 0 "#PWR012" H 4450 5050 30  0001 C CNN
+F 1 "GND" H 4450 4980 30  0001 C CNN
+	1    4450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 503CEA2F
+P 6450 3850
+F 0 "#PWR013" H 6450 3850 30  0001 C CNN
+F 1 "GND" H 6450 3780 30  0001 C CNN
+	1    6450 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR014
+U 1 1 503CEA2A
+P 6850 3900
+F 0 "#PWR014" H 6850 3990 20  0001 C CNN
+F 1 "+5V" H 6850 3990 30  0000 C CNN
+	1    6850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY85 U1
+U 1 1 503CE989
+P 5450 5250
+F 0 "U1" H 4950 6100 60  0000 C CNN
+F 1 "ATTINY85" H 5100 5400 60  0000 C CNN
+	1    5450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 503CE7AD
+P 8100 2200
+F 0 "#PWR015" H 8100 2290 20  0001 C CNN
+F 1 "+5V" H 8100 2290 30  0000 C CNN
+	1    8100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 503CE78C
+P 6400 2900
+F 0 "#PWR016" H 6400 2900 30  0001 C CNN
+F 1 "GND" H 6400 2830 30  0001 C CNN
+	1    6400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BRIDGE D1
+U 1 1 503CE6C5
+P 4350 2300
+F 0 "D1" H 4350 2350 70  0000 C CNN
+F 1 "MB2S-E3" H 4350 2250 70  0000 C CNN
+	1    4350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 503CE699
+P 2650 2250
+F 0 "P1" V 2600 2250 40  0000 C CNN
+F 1 "6VAC" V 2700 2250 40  0000 C CNN
+	1    2650 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5059E95E
+P 3100 5050
+F 0 "#PWR017" H 3100 5050 30  0001 C CNN
+F 1 "GND" H 3100 4980 30  0001 C CNN
+	1    3100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4450 3150 4450
+Wire Wire Line
+	7900 5350 8000 5350
+Wire Wire Line
+	8500 5350 8650 5350
+Wire Wire Line
+	9050 5350 9200 5350
+$Comp
+L CONN_6 P2
+U 1 1 5059EC10
+P 2550 4700
+F 0 "P2" V 2500 4700 60  0000 C CNN
+F 1 "SENSOR" V 2600 4700 60  0000 C CNN
+	1    2550 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 4750 7150 5250
+Connection ~ 7150 4750
+Text Label 7150 5250 1    60   ~ 0
+PWM6
+Wire Wire Line
+	2900 4950 3100 4950
+Text Label 3150 4450 2    60   ~ 0
+PWM6
+Wire Wire Line
+	3100 4950 3100 5050
+Text Notes 650  7250 0    60   ~ 0
+Released under the Creative Commons Attribution Share-Alike 3.0 License\nhttp://creativecommons.org/licenses/by-sa/3.0\n\nCopyright Guy van den Berg 2012\nhttp://www.marulaberry.co.za
+$EndSCHEMATC
